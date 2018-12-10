@@ -1,32 +1,26 @@
-# Keras vs. PyTorch: Alien vs. Predator recognition with transfer learning
+# Utilizando _transfer learning_ para classificação de Aliens e Predadores
 
 ![](images/transfer_learning.png)
 
+_Originalmente extraído do excelente do blog [deepsense.ai](https://deepsense.ai/) [post](https://medium.freecodecamp.org/keras-vs-pytorch-avp-transfer-learning-c8b852c31f02) no Medium e com código de fonte originalmente no [GitHub] (https://github.com/deepsense-ai/Keras-PyTorch-AvP-transfer-learning).
+As notas e demais alterações tem o intuito somente de traduzir e adaptar para a realidade das aulas do curso de Inteligência Artificial da FIAP, na disciplina de Tecnologia e Processamento de Imagens_
 
-Featured in [deepsense.ai](https://deepsense.ai/) blog post [Keras vs. PyTorch: Alien vs. Predator recognition with transfer learning](https://deepsense.ai/keras-vs-pytorch-avp-transfer-learning), in which we discuss the differences. Code is in two Jupyter Notebooks:
+Utilizando a técnica de _transfer learning_ obtivemos a vantagem de utilizar um modelo em deep-learning especializado na detecção de objetos, pessoas e animais, para aplicá-lo para outro conjunto de imagens que podem ter suas características extraídas pela mesma rede utilizada, que já se encontra otimizada para um conjunto de dados muito maior e preparada para uma variedade de discriminadores disponíveis.
 
-* [Transfer learning with ResNet-50 in Keras](Keras-Resnet50.ipynb)
-* [Transfer learning with ResNet-50 in PyTorch](PyTorch-Resnet50.ipynb)
+O notebook abaixo foi utilizado para demonstrar este tipo de técnica:
 
-See also the [upcoming webinar (10 Oct 2018)](https://www.crowdcast.io/e/KerasVersusPyTorch/register), in which we walk trough the code.
+* [Transfer learning com pesos pré-teinados ResNet-50 utilizando Keras](transfer-learning-keras.ipynb)
 
-For plug&play interactive code, see the [Neptune versions with fancy charts](https://app.neptune.ml/deepsense-ai/Keras-vs-PyTorch) or these Kaggle Kernels:
+# Dados
 
-* [Transfer learning with ResNet-50 in Keras - Kaggle Kernel](https://www.kaggle.com/pmigdal/transfer-learning-with-resnet-50-in-keras)
-* [Transfer learning with ResNet-50 in PyTorch - Kaggle Kernel](https://www.kaggle.com/pmigdal/transfer-learning-with-resnet-50-in-pytorch)
-
-# Data
-
-See also: [Alien vs. Predator images | Kaggle](https://www.kaggle.com/pmigdal/alien-vs-predator-images).
-In general, there are 447 images for each class, split into two classes. Examples:
+As imagens foram obtidas do desafio[Alien vs. Predator images | Kaggle](https://www.kaggle.com/pmigdal/alien-vs-predator-images).
+No geral, foram utilizadas 447 imagens para cada classe, sendo dividida em duas classes (_alien_ e _predador_):
 
 ![](images/example.png)
 
-# Requirements
+# Requisitos
 
-If you want to run the code, see the requirements:
-
-* Common:
+* Comum:
   * jupyter==1.0.0
   * matplotlib==2.2.3
   * Pillow==5.2.0
@@ -34,18 +28,3 @@ If you want to run the code, see the requirements:
 * Keras:
   * tensorflow==1.10.1
   * Keras==2.2.2
-* PyTorch:
-  * torch==0.4.1
-  * torchvision==0.2.1
-
-# Webinar info
-
-* [Link to the webinar (10 Oct 2018, 5 PM CEST)](https://www.crowdcast.io/e/KerasVersusPyTorch/register)
-* [Slides from the webinar](https://docs.google.com/presentation/d/1y6KBgVtvZ26afCbIbCoGZoEdT6-eoUqPc9U4cJ3X1Gw)
-* deepsense.ai's articles about Keras and PyTorch:
-  * [Keras or PyTorch as your first deep learning framework ](https://deepsense.ai/keras-or-pytorch/)
-  * [Keras vs. PyTorch: Alien vs. Predator recognition with transfer learning](https://deepsense.ai/keras-vs-pytorch-avp-transfer-learning/)
-* [Notebooks in Neptune](https://app.neptune.ml/deepsense-ai/Keras-vs-PyTorch)
-* Workshops:
-  * [open workshops at deepsense.ai's HQ](https://deepsense.ai/machine-learning-and-deep-learning-training/)
-  * [on-site workshops](https://deepsense.ai/machine-learning-training/)
