@@ -1,4 +1,4 @@
-_Originalmente extraído do excelente do blog [deepsense.ai](https://deepsense.ai/) [post](https://medium.freecodecamp.org/keras-vs-pytorch-avp-transfer-learning-c8b852c31f02) no Medium e com código de fonte originalmente no [GitHub] (https://github.com/deepsense-ai/Keras-PyTorch-AvP-transfer-learning).
+_Originalmente extraído do excelente do blog [deepsense.ai](https://deepsense.ai/) [post](https://medium.freecodecamp.org/keras-vs-pytorch-avp-transfer-learning-c8b852c31f02) no Medium e com código de fonte originalmente no [GitHub](https://github.com/deepsense-ai/Keras-PyTorch-AvP-transfer-learning).
 As notas e demais alterações tem o intuito somente de traduzir e adaptar para a realidade das aulas do curso de Inteligência Artificial da FIAP, na disciplina de Tecnologia e Processamento de Imagens_
 
 # Utilizando _transfer learning_ para classificação de Aliens e Predadores
